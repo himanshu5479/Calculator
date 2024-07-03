@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.display {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: right;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.2em;
+    transition: all 0.3s;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button.equal {
+    grid-column: span 4;
+    background: #4CAF50;
+    color: #fff;
+}
+
+button.equal:hover {
+    background: #45a049;
+}
+
+button:active {
+    transform: scale(0.95);
+}
